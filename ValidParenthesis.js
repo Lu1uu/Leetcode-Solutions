@@ -1,5 +1,5 @@
-// ([)] invalid
-// ([]) valid
+// https://leetcode.com/problems/valid-parentheses
+// Date: 5-4-2021
 
 function ValidateParenthesis(string) {
 	const brackets = {
