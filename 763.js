@@ -8,7 +8,6 @@
 function partitionLabels(S) {
 	const answer = []
 	const mapping = {}
-	let cloneString = S
 	new Set(S).forEach((char) => {
 		const firstIndex = S.indexOf(char)
 		const lastIndex = S.lastIndexOf(char)
