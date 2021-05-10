@@ -9,10 +9,10 @@ const countBits = function (num) {
 		//Convert num to binary
 		const binaryString = num.toString(2)
 		const binaryArray = binaryString.split("")
-		let numOfOnes = 0
-		binaryArray.forEach((digit) => {
-			if (digit == "1") numOfOnes++
-		})
+		let numOfOnes = binaryArray.reduce((total, digit) => {
+			if (digit == "1") return ++total
+			return total
+		}, 0)
 		output.unshift(numOfOnes)
 		num--
 	}
