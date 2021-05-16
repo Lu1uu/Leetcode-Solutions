@@ -4,12 +4,12 @@
  */
 const dailyTemperatures = (temperatures) => {
 	const waitTimes = temperatures.map((currentTemperature, index) => {
-		let daysPast = 0
+		let daysPassed = 0
 		for (let i = index; i < temperatures.length; i++) {
 			if (currentTemperature < temperatures[i]) {
-				return daysPast
+				return daysPassed
 			}
-			daysPast++
+			daysPassed++
 		}
 		return 0
 	})
